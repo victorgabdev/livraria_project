@@ -8,10 +8,16 @@ public class Livro {
 	private double valor;
 	private String isbn;
 	
-	public Autor autor;  // composicao
+	public Autor autor;  // Composicao
 	
+	// Sobrecarga (overloaded) de construtores
 	public Livro() {
-		System.out.println("Livro criado!");
+		this.isbn = "000-00-00000-00-00";
+	}
+	
+	public Livro(Autor autor) {
+		this();  // Vai chamar o outro construtor
+		this.autor = autor;
 	}
 	
 	// getters and setters
