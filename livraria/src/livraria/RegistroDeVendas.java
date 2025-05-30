@@ -21,6 +21,7 @@ public class RegistroDeVendas {
 		ebook.setValor(29.90);
 		
 		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		
 		carrinho.adiciona(fisico);
 		carrinho.adiciona(ebook);
 		

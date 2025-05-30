@@ -1,6 +1,6 @@
 package livraria.entities;
 
-public abstract class Livro {
+public abstract class Livro implements Produto {
 	
 	// Atributos
 	private String nome;
