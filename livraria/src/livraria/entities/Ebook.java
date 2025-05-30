@@ -1,6 +1,8 @@
 package livraria.entities;
 
-public class Ebook extends Livro {
+import livraria.entities.interfaces.Promocional;
+
+public class Ebook extends Livro implements Promocional {
 	
 	// Atributos
 	private String watermark;  // marca d'agua

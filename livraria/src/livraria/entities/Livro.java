@@ -75,7 +75,7 @@ public abstract class Livro implements Produto {
 		System.out.println("--");
 	}
 	
-	public abstract boolean aplicaDescontoDe(double porcentagem);
+	//public abstract boolean aplicaDescontoDe(double porcentagem); interface Promocional
 	
 	public boolean temAutor() {
 		return this.autor != null; // expressao booleana 

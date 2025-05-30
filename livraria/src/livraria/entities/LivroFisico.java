@@ -1,6 +1,8 @@
 package livraria.entities;
 
-public class LivroFisico extends Livro {
+import livraria.entities.interfaces.Promocional;
+
+public class LivroFisico extends Livro implements Promocional {
 
 	public LivroFisico(Autor autor) {
 		super(autor);

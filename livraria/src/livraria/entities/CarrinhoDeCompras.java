@@ -7,6 +7,7 @@ public class CarrinhoDeCompras {
 	private double total;
 	
 	/*
+	 * Sobrecarga do metodo adiciona
 	public void adiciona(Livro livro) {
 		System.out.println("Adicionando: " + livro);
 		livro.aplicaDescontoDe(0.05);

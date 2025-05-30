@@ -1,8 +1,9 @@
 package livraria.entities;
 
 import livraria.entities.interfaces.Produto;
+import livraria.entities.interfaces.Promocional;
 
-public class Revista implements Produto {
+public class Revista implements Produto, Promocional {
 	
 	private String nome;
 	private String descricao;
@@ -33,6 +34,7 @@ public class Revista implements Produto {
 		this.editora = editora;
 	}
 	
+	@Override
 	public boolean aplicaDescontoDe(double porcentagem) {
 		if (porcentagem > 0.1)  return false;
 		
