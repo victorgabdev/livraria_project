@@ -1,5 +1,7 @@
 package livraria.entities;
 
+import livraria.entities.interfaces.Produto;
+
 public abstract class Livro implements Produto {
 	
 	// Atributos

@@ -1,4 +1,4 @@
-package livraria;
+package livraria.services;
 
 public class CalculadoraDeEstoque {
 

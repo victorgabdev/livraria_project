@@ -1,4 +1,4 @@
-package livraria;
+package livraria.services;
 
 import livraria.entities.Autor;
 import livraria.entities.CarrinhoDeCompras;
