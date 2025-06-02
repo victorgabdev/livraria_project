@@ -33,5 +33,15 @@ public class CarrinhoDeCompras {
 	public double getTotal() {
 		return total;
 	}
+
+	public Produto[] getProdutos() {
+		return produtos;
+	}
+
+	public void setProdutos(Produto[] produtos) {
+		this.produtos = produtos;
+	}
+	
+	
 	
 }

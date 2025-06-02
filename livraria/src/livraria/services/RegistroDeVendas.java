@@ -3,6 +3,7 @@ package livraria.services;
 import livraria.entities.Autor;
 import livraria.entities.Ebook;
 import livraria.entities.LivroFisico;
+import livraria.entities.interfaces.Produto;
 
 public class RegistroDeVendas {
 	
@@ -28,7 +29,21 @@ public class RegistroDeVendas {
 		carrinho.adiciona(fisico);
 		carrinho.adiciona(ebook);
 		
-		System.out.println("Total: " + carrinho.getTotal());
+		//System.out.println("Total: " + carrinho.getTotal());
+		
+		//System.out.println(ebook.toString());
+		System.out.println(autor.getClass().getSimpleName());
+		
+		/*
+		Produto[] produtos = carrinho.getProdutos();
+		
+		
+		for (Produto produto: produtos) {
+			System.out.println(produto.getValor());
+		}
+		*/
+		
+		
 	}
 
 }

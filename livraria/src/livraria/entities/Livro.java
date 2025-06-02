@@ -71,7 +71,8 @@ public abstract class Livro implements Produto {
 	}
 
 	// métodos
-	public void mostrarDetalhes() {
+	@Override
+	public String toString() {
 		System.out.println("Mostrando Detalhes do livro");
 		System.out.println(nome);
 		System.out.println(descricao);
@@ -80,6 +81,8 @@ public abstract class Livro implements Produto {
 		
 		if(this.temAutor()) autor.mostrarDetalhes();
 		System.out.println("--");
+		
+		return "";
 	}
 	
 	//public abstract boolean aplicaDescontoDe(double porcentagem); interface Promocional
@@ -87,5 +90,7 @@ public abstract class Livro implements Produto {
 	public boolean temAutor() {
 		return this.autor != null; // expressao booleana 
 	}
+	
+	
 
 }

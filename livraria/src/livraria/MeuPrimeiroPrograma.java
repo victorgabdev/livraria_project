@@ -19,10 +19,13 @@ public class MeuPrimeiroPrograma {
 		*/
 		
 		abreArquivo();
+		
+		// Toda String é imutável
+		String java = new String("Java");
 	}
 	
 	public static void abreArquivo() throws FileNotFoundException {
-		new java.io.FileInputStream("arquivo.txt");	// Fully Qualified Name
+		//new java.io.FileInputStream("arquivo.txt");	// Fully Qualified Name
 	}
 
 }
