@@ -2,7 +2,6 @@ package livraria.services;
 
 import livraria.entities.Autor;
 import livraria.entities.Ebook;
-import livraria.entities.Livro;
 import livraria.entities.LivroFisico;
 
 public class RegrasDeDesconto {
@@ -13,7 +12,7 @@ public class RegrasDeDesconto {
 		autor.setNome("Rodrigo Turini");
 ;
 		
-		Livro livro = new LivroFisico(autor);
+		LivroFisico livro = new LivroFisico(autor);
 		livro.setValor(59.90);
 		
 		//System.out.println("Valor Atual: " + livro.getValor());

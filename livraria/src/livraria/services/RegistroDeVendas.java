@@ -1,7 +1,6 @@
 package livraria.services;
 
 import livraria.entities.Autor;
-import livraria.entities.CarrinhoDeCompras;
 import livraria.entities.Ebook;
 import livraria.entities.LivroFisico;
 
