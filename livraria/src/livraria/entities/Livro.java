@@ -1,6 +1,7 @@
 package livraria.entities;
 
 import livraria.entities.interfaces.Produto;
+import livraria.exception.AutorNuloException;
 
 public abstract class Livro implements Produto {
 	
@@ -13,13 +14,19 @@ public abstract class Livro implements Produto {
 	public Autor autor;  // Composicao
 	
 	// Sobrecarga (overloaded) de construtores
+	/*
 	public Livro() {
 		this.isbn = "000-00-00000-00-00";
 	}
+	*/
 	
 	public Livro(Autor autor) {
-		this();  // Vai chamar o outro construtor
+		//this();  // Vai chamar o outro construtor
+		
+		if (autor == null) throw new AutorNuloException("O autor do Livro não pode ser nulo");
+		
 		this.autor = autor;
+		this.isbn = "000-00-00000-00-00";
 	}
 	
 	// getters and setters
