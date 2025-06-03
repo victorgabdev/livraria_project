@@ -1,5 +1,7 @@
 package livraria.services;
 
+import java.util.List;
+
 import livraria.entities.Autor;
 import livraria.entities.Ebook;
 import livraria.entities.LivroFisico;
@@ -34,14 +36,14 @@ public class RegistroDeVendas {
 		//System.out.println(ebook.toString());
 		System.out.println(autor.getClass().getSimpleName());
 		
-		/*
-		Produto[] produtos = carrinho.getProdutos();
+		
+		List<Produto> produtos = carrinho.getProdutos();
 		
 		
-		for (Produto produto: produtos) {
+		for (Produto produto: produtos) {  //enhanced-for
 			System.out.println(produto.getValor());
 		}
-		*/
+		
 		
 		
 	}

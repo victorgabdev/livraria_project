@@ -1,12 +1,15 @@
 package livraria.services;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import livraria.entities.interfaces.Produto;
 
 public class CarrinhoDeCompras {
 	
 	private double total;
-	private Produto[] produtos = new Produto[10];
-	private int contador = 0;
+	private List<Produto> produtos;  // Generics
+	//private int contador = 0;
 	
 	/*
 	 * Sobrecarga do metodo adiciona
@@ -23,24 +26,31 @@ public class CarrinhoDeCompras {
 	}
 	*/
 	
+	public CarrinhoDeCompras() {
+		this.produtos = new ArrayList<>();  // Diamond Operator, Polimorfismo
+	}
+	
 	public void adiciona(Produto produto) {
-		System.out.println("Adicionando: " + produto);
-		this.produtos[contador] = produto;
-		contador++;
-		total += produto.getValor();
+		this.produtos.add(produto);
+	}
+	
+	public void remove(int posicao) {
+		this.produtos.remove(posicao);
 	}
 
 	public double getTotal() {
 		return total;
 	}
 
-	public Produto[] getProdutos() {
+	public List<Produto> getProdutos() {
 		return produtos;
 	}
-
+	
+	/*
 	public void setProdutos(Produto[] produtos) {
 		this.produtos = produtos;
 	}
+	*/
 	
 	
 	
